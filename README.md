@@ -1,3 +1,28 @@
+### Fork of Twitter Bootstrap MVC Templates
+
+Changes include :-
+
+[DataTables](http://datatables.net) list template
+
+jquery date picker integration
+
+HelperText attribute for model classes
+
+```csharp
+public class Customer
+{
+  [Required]
+  [StringLength(50)]
+  [HelperText("Enter your full name")]
+  [Display(Name = "Customer Name")]
+  public string Name { get; set; }
+  
+  [HelperText("Some default text")]
+  [Display(Name = "Checkbox option")]
+  public bool IsCheckbox { get; set; }
+}
+```
+
 ## Twitter Bootstrap MVC Templates
 
 A set of changes to style the default MVC template to use [Twitter Bootstrap](http://twitter.github.com/bootstrap/).
