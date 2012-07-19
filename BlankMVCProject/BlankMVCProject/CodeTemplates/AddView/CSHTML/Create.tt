@@ -75,7 +75,7 @@ if (mvcHost.ReferenceScriptLibraries) {
 }
 #>
 <script src="@Url.Content("~/Scripts/bootstrap-datepicker.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/Scripts/bootstrap-datepicker-format.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/bootstrap-datepicker-init.js")" type="text/javascript"></script>
 
 @using (Html.BootstrapBeginForm("form-horizontal")) {
     @Html.ValidationSummary(true)

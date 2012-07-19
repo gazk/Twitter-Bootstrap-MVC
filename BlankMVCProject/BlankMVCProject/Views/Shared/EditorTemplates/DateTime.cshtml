@@ -1,7 +1,9 @@
-﻿@model DateTime?
+﻿@using System.Globalization
+@model DateTime?
 
 @{
-    var htmlAttributes = new Dictionary<string, object> {{"data-datepicker", "datepicker"}, 
+    // The datepicker plugin uses slightly different date formats than .NET. E.g MM/dd/yyyy needs to be mm/dd/yyyy    
+    var htmlAttributes = new Dictionary<string, object> {{"data-date-format", CultureInfo.CurrentCulture.DateTimeFormat.ShortDatePattern.ToLower()}, 
                                                          {"class", "input-small"}};
 
 }

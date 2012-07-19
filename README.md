@@ -4,7 +4,7 @@ Changes include :-
 
 [DataTables](http://datatables.net) list template
 
-jquery date picker integration
+jquery [date picker](https://github.com/eternicode/bootstrap-datepicker) integration
 
 HelperText attribute for model classes
 
